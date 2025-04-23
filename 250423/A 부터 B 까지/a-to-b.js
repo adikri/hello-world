@@ -5,18 +5,15 @@ let a = Number(input[0]);
 
 let b = Number(input[1]);
 
-let output = a + " ";
+let output = "";
 
-while(a < b){
+while(a <= b){
+    output += a + " ";
     if(a % 2 === 1){
         a = a*2;
     }else{
         a = a + 3;
-    }
-    if(a > b){
-        break;
-    }
-    output += a + " ";
+    }    
 }
 
 console.log(output);
