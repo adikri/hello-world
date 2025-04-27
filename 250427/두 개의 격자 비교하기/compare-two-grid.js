@@ -10,11 +10,15 @@ let arr2 = Array(n).fill(0).map(()=>Array(m).fill(0));
 let arr3 = Array(n).fill(0).map(()=>Array(m).fill(0));
 
 for(let i = 0; i < n; i++){
-    arr1[i] = input[i+1].split(" ").map(Number);
+    for(let j = 0; j < m; j++){
+        arr1[i] = input[i+1].split(" ").map(Number);
+    }
 }
 
 for(let i = 0; i < n; i++){
-    arr2[i] = input[i+5].split(" ").map(Number);
+    for(let j = 0; j < m; j++){
+        arr2[i] = input[i+1+n].split(" ").map(Number);
+    }
 }
 
 // console.log(arr1,arr2);
