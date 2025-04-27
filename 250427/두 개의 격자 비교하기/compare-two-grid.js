@@ -17,19 +17,23 @@ for(let i = 0; i < 4; i++){
 // console.log(arr1,arr2);
 
 for(let i = 0; i < 4; i++){
+    let str = "";
     for(let j = 0; j < 4; j++){
         // console.log(arr1[i][j],arr2[i][j]);
+        
         if(arr1[i][j] !== arr2[i][j]){
             arr3[i][j] = 1;
         }
-    }
-}
-// console.log(arr3);
-
-for(let i = 0; i < 4; i++){
-    let str = "";
-    for(let j = 0; j < 4; j++){
-        str += arr3[i][j] + " "; 
+        str += arr3[i][j] + " ";
     }
     console.log(str);
 }
+// console.log(arr3);
+
+// for(let i = 0; i < 4; i++){
+//     let str = "";
+//     for(let j = 0; j < 4; j++){
+//         str += arr3[i][j] + " "; 
+//     }
+//     console.log(str);
+// }
